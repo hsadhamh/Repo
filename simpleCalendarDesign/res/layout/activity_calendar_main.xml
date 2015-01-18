@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="labs.factor.simplecalendardesign.CalendarMainActivity" 
+    android:orientation ="vertical">
+
+	<LinearLayout
+	    android:id="@+id/topBarLayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="60sp"
+	    android:gravity="start|top"
+	    android:orientation="horizontal">
+
+	    <Button
+	        android:id="@+id/buttonPrevious"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60sp"
+	        android:layout_gravity="start"
+	        android:layout_weight="0.34"
+	        android:height="60sp"
+	        android:text="Prev" />
+
+	    <TextView
+	        android:id="@+id/MonthView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60sp"
+	        android:layout_gravity="center"
+	        android:layout_weight="1.48"
+	        android:height="60sp"
+	        android:text="Hello World"
+	        android:gravity="center" />
+
+	    <Button
+	        android:id="@+id/buttonNext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="60sp"
+	        android:layout_weight="0.34"
+	        android:height="60sp"
+	        android:text="Next" />
+
+	</LinearLayout>
+
+	<GridView
+	    android:id="@+id/GridView01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:numColumns="7" >
+	</GridView>
+
+	<GridView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7" >
+    </GridView>
+
+</LinearLayout>
